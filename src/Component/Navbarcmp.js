@@ -1,14 +1,14 @@
 import React from 'react'
 import { Navbar,Container,FormControl, Dropdown,Badge} from 'react-bootstrap';
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Navbarcmp() {
   return (
     <div>  
         <Navbar variant='dark' expand="lg" style={{backgroundColor:"black"}}>
   <Container >
-    <Navbar.Brand href="/">Shopping Cart</Navbar.Brand>
-    {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
+    <Navbar.Brand> <Link to="/" style={{textDecoration:"none",color:"inherit"}}>Shopping Cart </Link></Navbar.Brand>
     
      <Navbar.Text className="search">
         <FormControl
