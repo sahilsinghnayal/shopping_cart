@@ -19,7 +19,7 @@ function Navbarcmp() {
           style={{width:350}}
         />
       </Navbar.Text>
-      <Dropdown alignRight >
+      <Dropdown >
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge></Badge>
