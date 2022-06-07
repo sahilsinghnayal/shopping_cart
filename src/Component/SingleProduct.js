@@ -5,9 +5,10 @@ import Rating from "./Rating";
 
 function SingleProduct({ prod }) {
   const{state:{cart},dispatch,}=CartState();
+  // console.log(cart);
   return (
     <div className="products">
-      <Card>
+      <Card className="cards">
         <Card.Img varient="top" src={prod.image} alt={prod.name} />
         <Card.Body>
           <Card.Title>{prod.name}</Card.Title>
@@ -20,7 +21,7 @@ function SingleProduct({ prod }) {
             )}
             <Rating rating={prod.ratings} />
           </Card.Subtitle>
-          {cart.some((p) => p.id === prod.id) ? (
+          {cart.some((p) => p.id === prod.id) ? (  //some will check if it is present or not
             <Button
               variant="danger"
               onClick={() =>

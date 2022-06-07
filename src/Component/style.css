@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  background-color: #1c342c;
 }
 .productContainer {
     display: flex;
@@ -24,4 +25,39 @@
   .products{
     width:30%;
     margin: 10px;
+  }
+  .cartitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cartItemImg {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cartItemDetail {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .summary{
+    width:30%;
+  }
+  .cards{
+    background-color: #022519 !important;
+    color: white;
+  }
+  .list{
+    background-color: #022519 !important;
+    color: white;
   }
