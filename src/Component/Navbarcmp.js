@@ -22,12 +22,12 @@ function Navbarcmp() {
           style={{width:350}}
         />
       </Navbar.Text>
-      <Dropdown alignLeft>
+      <Dropdown alignRight>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge> {cart.length}</Badge>
             </Dropdown.Toggle>
-            <Dropdown.Menu style={{minWidth:270}}>
+            <Dropdown.Menu  className="dropdown" style={{minWidth:270}}>
             {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (
@@ -54,7 +54,7 @@ function Navbarcmp() {
                     </span>
                   ))}
                   <Link to="/cart">
-                    <Button style={{ width: "95%", margin: "0 10px" }}>
+                    <Button  className="dropbtn"style={{ width: "95%", margin: "0 10px" }}>
                       Go To Cart
                     </Button>
                   </Link>
